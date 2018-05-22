@@ -22,21 +22,32 @@ bulls_on_parade.sing_me_a_song()
 
 
 #Write a program to implement calculator using class
+'''
 class Calculator(object):
-    def __init__(self, item1, item2, operation):
-        self.item1=item1
-        self.item2=item2
+    def __init__(self, items, operation):
+        self.items = items        
         self.operation=operation
     def calculate_operation(self):
         if self.operation == '+':
-            print (self.item1+self.item2)
+            print(self.itmes)
+            print (self.items[0]+self.items[1])
         if self.operation == '-':
-            print (self.item1-self.item2)
+            print (self.items[0]-self.items[1])
         if self.operation == '/':
-            print (self.item1/self.item2)
+            print (self.items[0]/self.items[1])
         if self.operation == '*':
-            print (self.item1*self.item2)
+            print (self.items[0]*self.items[1])
             
-cal_addition = Calculator([1],[2],['+'])
-cal_subtraction = Calculator()
+cal_addition = Calculator([1,2],['+'])
 cal_addition.calculate_operation()
+'''
+    
+class Calculator(object):
+    def __init__(self, val1, val2):
+        self.val1 = val1
+        self.val2 = val2
+    def add(self):
+        return sum(self.val1, self.val2)
+
+c1 = Calculator(2,3)
+print (c1.add())
