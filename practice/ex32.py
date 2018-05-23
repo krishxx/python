@@ -34,6 +34,7 @@ for i in elements:
     print ("Element was: %r" % i)
 elements.clear()
 
-
 for i in range(6):
     print (i)
+    
+str = "hello"
