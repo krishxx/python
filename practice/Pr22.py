@@ -2,7 +2,8 @@
 Level 3
 
 Question:
-Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically. 
+Write a program to compute the frequency of the words from the input. 
+The output should output after sorting the key alphanumerically. 
 Suppose the following input is supplied to the program:
 New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.
 Then, the output should be:
@@ -19,7 +20,8 @@ or:2
 to:1
 
 Hints
-In case of input data being supplied to the question, it should be assumed to be a console input.
+In case of input data being supplied to the question, it should be assumed 
+to be a console input.
 
 Solution:
 '''
@@ -30,7 +32,7 @@ for word in line.split():
 
 words = freq.keys()
 print(type(words)) 
-#words.sort()
+words.sort()
 
 for w in words:
 	print ("%s:%d" % (w,freq[w]))

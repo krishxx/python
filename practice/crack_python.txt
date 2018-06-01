@@ -2283,3 +2283,173 @@ solutions=solve(numheads,numlegs)
 print solutions
 
 #----------------------------------------#
+
+--------------------------------Simple Examples-------------------------------
+101. Write a program to Calculate the Average of Numbers in a Given List
+102. Write a program to Exchange the Values of Two Numbers Without Using a Temporary Variable
+103. Write a program to Read a Mumber n and Compute n+nn+nnn
+104. Write a program to Reverse a Given Number
+105. Write a program to Check Whether a Number is Positive or Negative
+106. Write a program to Take in the Marks of 5 Subjects and Display the Grade
+107. Write a program to Print all Numbers in a Range Divisible by a Given Number
+108. Write a program to Read Two Numbers and Print Their Quotient and Remainder
+109. Write a program to Accept Three Digits and Print all Possible Combinations from the Digits
+110. Write a program to Print Odd Numbers Within a Given Range
+111. Write a program to Find the Sum of Digits in a Number
+112. Write a program to Find the Smallest Divisor of an Integer
+113. Write a program to Count the Number of Digits in a Number
+114. Write a program to Check if a Number is a Palindrome
+115. Write a program to Print all Integers that Aren't Divisible by Either 2 or 3 and Lie between 1 and 50.
+116. Write a program to Read a Number n And Print the Series "1+2+…..+n= "
+117. Write a program to Read a Number n and Print the Natural Numbers Summation Pattern
+118. Write a program to Print an Identity Matrix
+119. Write a program to Print an Inverted Star Pattern
+120. Write a program to Read Print Prime Numbers in a Range using Sieve of Eratosthenes
+
+-----------------Examples on Mathematical Functions-------------------
+121. Write a program to Check if a Date is Valid and Print the Incremented Date if it is
+122. Write a program to Compute Simple Interest Given all the Required Values
+123. Write a program to Check Whether a Given Year is a Leap Year
+124. Write a program to Read Height in Centimeters and then Convert the Height to Feet and Inches
+125. Write a program to Take the Temperature in Celcius and Covert it to Farenheit
+126. Write a program to Compute Prime Factors of an Integer
+127. Write a program to Generate all the Divisors of an Integer
+128. Write a program to Print Table of a Given Number
+129. Write a program to Print Sum of Negative Numbers, Positive Even Numbers and Positive Odd numbers in a List
+130. Write a program to Print Largest Even and Largest Odd Number in a List
+131. Write a program to Form an Integer that has the Number of Digits at Ten's Place and the Least Significant Digit of the Entered Integer at One's Place
+132. Write a program to Find Those Numbers which are Divisible by 7 and Multiple of 5 in a Given Range of Numbers
+134. Write a program to Check if a Number is an Armstrong Number
+135. Write a program to Print the Pascal's triangle for n number of rows given by the user
+136. Write a program to Check if a Number is a Perfect Number
+137. Write a program to Check if a Number is a Strong Number
+138. Write a program to Find the LCM of Two Numbers
+139. Write a program to Find the GCD of Two Numbers
+140. Write a program to Compute a Polynomial Equation given that the Coefficients of the Polynomial are stored in a List
+141. Write a program to Check If Two Numbers are Amicable Numbers
+142. Write a program to Find the Area of a Triangle Given All Three Sides
+143. Write a program to Find the Gravitational Force Acting Between Two Objects
+144. Write a program to Check if a Number is a Prime Number
+145. Write a program to Print all the Prime Numbers within a Given Range
+146. Write a program to Print Numbers in a Range (1,upper) Without Using any Loops
+147. Write a program to Find the Sum of Sine Series
+148. Write a program to Find the Sum of Cosine Series
+149. Write a program to Find the Sum of First N Natural Numbers
+150. Write a program to Find the Sum of the Series: 1 + 1/2 + 1/3 + ….. + 1/N
+151. Write a program to Find the Sum of the Series: 1 + x^2/2 + x^3/3 + … x^n/n
+152. Write a program to Compute the Value of Euler's Number e. Use the Formula: e = 1 + 1/1! + 1/2! + …… 1/n!
+153. Write a program to Determine all Pythagorean Triplets in the Range
+154. Write a program to Search the Number of Times a Particular Number Occurs in a List
+
+--------------------Examples on Lists---------------------------------
+155. Write a program to Find the Largest Number in a List
+156. Write a program to Find the Second Largest Number in a List
+157. Write a program to Put Even and Odd elements in a List into Two Different Lists
+158. Write a program to Merge Two Lists and Sort it
+159. Write a program to Sort the List According to the Second Element in Sublist
+160. Write a program to Find the Second Largest Number in a List Using Bubble Sort
+161. Write a program to Sort a List According to the Length of the Elements
+162. Write a program to Find the Union of two Lists
+163. Write a program to Find the Intersection of Two Lists
+164. Write a program to Create a List of Tuples with the First Element as the Number and Second Element as the Square of the Number
+165. Write a program to Find all Numbers in a Range which are Perfect Squares and Sum of all Digits in the Number is Less than 10
+166. Write a program to Find the Cumulative Sum of a List where the ith Element is the Sum of the First i+1 Elements From The Original List
+167. Write a program to Generate Random Numbers from 1 to 20 and Append Them to the List
+168. Write a program to Sort a List of Tuples in Increasing Order by the Last Element in Each Tuple
+169. Write a program to Swap the First and Last Value of a List
+170. Write a program to Remove the Duplicate Items from a List
+171. Write a program to Read a List of Words and Return the Length of the Longest One
+172. Write a program to Remove the ith Occurrence of the Given Word in a List where Words can Repeat
+173. Write a program to Remove All Tuples in a List of Tuples with the USN Outside the Given Range
+
+--------------------Examples on Strings-------------------------------
+174. Write a program to Replace all Occurrences of ‘a’ with $ in a String
+175. Write a program to Remove the nth Index Character from a Non-Empty String
+176. Write a program to Detect if Two Strings are Anagrams
+177. Write a program to Form a New String where the First Character and the Last Character have been Exchanged
+178. Write a program to Count the Number of Vowels in a String
+179. Write a program to Take in a String and Replace Every Blank Space with Hyphen
+180. Write a program to Calculate the Length of a String Without Using a Library Function
+181. Write a program to Remove the Characters of Odd Index Values in a String
+182. Write a program to Calculate the Number of Words and the Number of Characters Present in a String
+183. Write a program to Take in Two Strings and Display the Larger String without Using Built-in Functions
+184. Write a program to Count Number of Lowercase Characters in a String
+185. Write a program to Check if a String is a Palindrome or Not
+186. Write a program to Calculate the Number of Upper Case Letters and Lower Case Letters in a String
+187. Write a program to Check if a String is a Pangram or Not
+188. Write a program to Accept a Hyphen Separated Sequence of Words as Input and Print the Words in a Hyphen-Separated Sequence after Sorting them Alphabetically
+189. Write a program to Calculate the Number of Digits and Letters in a String
+190. Write a program to Form a New String Made of the First 2 and Last 2 characters From a Given String
+191. Write a program to Count the Occurrences of Each Word in a Given String Sentence
+192. Write a program to Check if a Substring is Present in a Given String
+
+--------------------Examples on Dictionary----------------------------------
+193. Write a program to Add a Key-Value Pair to the Dictionary
+194. Write a program to Concatenate Two Dictionaries Into One
+195. Write a program to Check if a Given Key Exists in a Dictionary or Not
+196. Write a program to Generate a Dictionary that Contains Numbers (between 1 and n) in the Form (x,x*x).
+197. Write a program to Sum All the Items in a Dictionary
+198. Write a program to Multiply All the Items in a Dictionary
+199. Write a program to Remove the Given Key from a Dictionary
+200. Write a program to Form a Dictionary from an Object of a Class
+201. Write a program to Map Two Lists into a Dictionary
+202. Write a program to Count the Frequency of Words Appearing in a String Using a Dictionary
+203. Write a program to Create a Dictionary with Key as First Character and Value as Words Starting with that Character
+
+-----------------------Examples on Sets--------------------------------------
+204. Write a program to Count the Number of Vowels Present in a String using Sets
+205. Write a program to Check Common Letters in Two Input Strings
+206. Write a program that Displays which Letters are in the First String but not in the Second
+207. Write a program that Displays which Letters are Present in Both the Strings
+208. Write a program that Displays which Letters are in the Two Strings but not in Both
+
+------------------------With Recursions--------------------------------------------
+209. Write a program to Determine Whether a Given Number is Even or Odd Recursively
+210. Write a program to Determine How Many Times a Given Letter Occurs in a String Recursively
+211. Write a program to Find the Fibonacci Series Using Recursion
+212. Write a program to Find the Factorial of a Number Using Recursion
+213. Write a program to Find the Sum of Elements in a List Recursively
+214. Write a program to Find the Binary Equivalent of a Number Recursively
+215. Write a program to Find the Sum of the Digits of the Number Recursively
+216. Write a program to Find the LCM of Two Numbers Using Recursion
+217. Write a program to Find the GCD of Two Numbers Using Recursion
+218. Write a program to Find if a Number is Prime or Not Prime Using Recursion
+219. Write a program to Find the Product of two Numbers Using Recursion
+220. Write a program to Find the Power of a Number Using Recursion
+221. Write a program to Check Whether a String is a Palindrome or not Using Recursion
+222. Write a program to Reverse a String Using Recursion
+223. Write a program to Flatten a Nested List using Recursion
+224. Write a program to Find the Total Sum of a Nested List Using Recursion
+225. Write a program to Find the Length of a List Using Recursion
+
+------------------------Without Recursions-------------------------------------
+226. Write a program to Find the Fibonacci Series without Using Recursion
+227. Write a program to find the factorial of a number without recursion
+228. Write a program to Flatten a List without using Recursion
+229. Write a program to Reverse a String without using Recursion
+230. Write a program to Find the Binary Equivalent of a Number without Using Recursion
+231. Write a program to Find All Numbers which are Odd and Palindromes Between a Range of Numbers without using Recursion
+232. Write a program to Find the Sum of Digits in a Number without Recursion
+
+--------------------------File Handling----------------------------------------
+233. Write a program to Read the Contents of a File
+234. Write a program to Count the Number of Words in a Text File
+235. Write a program to Count the Number of Lines in a Text File
+236. Write a program to Read a String from the User and Append it into a File
+237. Write a program to Count the Occurrences of a Word in a Text File
+238. Write a program to Copy the Contents of One File into Another
+239. Write a program that Reads a Text File and Counts the Number of Times a Certain Letter Appears in the Text File
+240. Write a program to Read a Text File and Print all the Numbers Present in the Text File
+241. Write a program to Append the Contents of One File to Another File
+242. Write a program to Count the Number of Blank Spaces in a Text File
+243. Write a program to Read a File and Capitalize the First Letter of Every Word in the File
+244. Write a program to Read the Contents of a File in Reverse Order
+
+------------------------Classes and Objects------------------------------------
+245. Write a program to Find the Area of a Rectangle Using Classes
+246. Write a program to Append, Delete and Display Elements of a List Using Classes
+247. Write a program to Find the Area of a Rectangle Using Classes
+248. Write a program to Create a Class and Compute the Area and the Perimeter of the Circle
+249. Write a program to Create a Class which Performs Basic Calculator Operations
+250. Write a program to Create a Class in which One Method Accepts a String from the User and Another Prints it
+251. Write a program to Create a Class and Get All Possible Subsets from a Set of Distinct Integers
