@@ -9,10 +9,11 @@ Use try/except to catch exceptions.
 Solution:
 '''
 def throws():
-	#5/0
-	err
-	#print(tintintitin)
+	5/0
+	#err
+	print("tintintitin")
 	return
+
 try:
     throws()
 except ZeroDivisionError:

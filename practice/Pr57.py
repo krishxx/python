@@ -19,4 +19,4 @@ class MyError(Exception):
         self.msg = msg
 
 error = MyError("something wrong")
-#print(error)
+print(error)
