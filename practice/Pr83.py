@@ -12,6 +12,6 @@ Solution:
 '''
 from timeit import Timer
 j=0
-t = Timer("for i in range(0,100): 1+1")
+t = Timer("for i in range(0,10): 1+1")
 print (t.timeit())
 
