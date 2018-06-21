@@ -93,9 +93,110 @@ users[(users.age > 20) & (users.gender == 'M')] # use multiple conditions
 users[users.job.isin(['student', 'engineer'])][['age','job']] # filter specific values
 
 df = users.copy()
+print (df)
 df.age.sort_values() # only works for a Series
 df.sort_values(by='age') # sort rows by a specific column
 df.sort_values(by='age', ascending=False) # use descending order instead
 df.sort_values(by=['job', 'age']) # sort by multiple columns
+print (df)
 df.sort_values(by=['job', 'age'], inplace=True) # modify df
 print(df)
+
+print(df.describe())
+
+print(df.describe(include='all'))
+print(df.describe(include=['object'])) # limit to one (or more) types
+
+print(df.groupby("job").mean())
+
+for grp, data in df.groupby("job"):
+    print(grp, data)
+    
+df = users.append(df.iloc[0], ignore_index=True)
+print(df.duplicated()) # Series of booleans
+# (True if a row is identical to a previous row)
+df.duplicated().sum() # count of duplicates
+df[df.duplicated()] # only show duplicates
+df.age.duplicated() # check a single column for duplicates
+df.duplicated(['age', 'gender']).sum() # specify columns for finding duplicates
+df = df.drop_duplicates() # drop duplicate rows
+
+# Missing values are often just excluded
+df = users.copy()
+df.describe(include='all') # excludes missing values
+# find missing values in a Series
+df.height.isnull() # True if NaN, False otherwise
+df.height.notnull() # False if NaN, True otherwise
+df[df.height.notnull()] # only show rows where age is not NaN
+df.height.isnull().sum() # count the missing values
+# find missing values in a DataFrame
+df.isnull() # DataFrame of booleans
+df.isnull().sum() # calculate the sum of each column
+
+df.dropna() # drop a row if ANY values are missing
+df.dropna(how='all') # drop a row only if ALL values are missing
+
+df.height.mean()
+df = users.copy()
+df.loc[df.height.isnull(), "height"] = df["height"].mean()
+print(df)
+
+df = users.copy()
+print(df.columns)
+df.columns = ['age', 'genre', 'travail', 'nom', 'taille']
+df.travail = df.travail.map({ 'student':'etudiant', 'manager':'manager',
+'engineer':'ingenieur', 'scientist':'scientific'})
+assert df.travail.isnull().sum() == 0
+df['travail'].str.contains("etu|inge")
+
+size = pd.Series(np.random.normal(loc=175, size=20, scale=10))
+# Corrupt the first 3 measures
+size[:3] += 500
+
+size_outlr_mean = size.copy()
+size_outlr_mean[((size - size.mean()).abs() > 3 * size.std())] = size.mean()
+print(size_outlr_mean.mean())
+
+import tempfile, os.path
+
+tmpdir = tempfile.gettempdir()
+print (tmpdir)
+
+csv_filename = os.path.join(tmpdir, "users.csv")
+users.to_csv(csv_filename, index=False)
+other = pd.read_csv(csv_filename)
+
+print (other)
+
+xls_filename = os.path.join(tmpdir, "users.xlsx")
+users.to_excel(xls_filename, sheet_name='users', index=False)
+pd.read_excel(xls_filename, sheetname='users')
+# Multiple sheets
+with pd.ExcelWriter(xls_filename) as writer:
+    users.to_excel(writer, sheet_name='users', index=False)
+    df.to_excel(writer, sheet_name='salary', index=False)
+    
+pd.read_excel(xls_filename, sheetname='users')
+pd.read_excel(xls_filename, sheetname='salary')
+
+import pandas as pd
+import sqlite3
+db_filename = os.path.join(tmpdir, "users.db")
+
+conn = sqlite3.connect(db_filename)
+
+url = 'https://raw.github.com/neurospin/pystatsml/master/data/salary_table.csv'
+salary = pd.read_csv(url)
+salary.to_sql("salary", conn, if_exists="replace")
+
+cur = conn.cursor()
+values = (100, 14000, 5, 'Bachelor', 'N')
+cur.execute("insert into salary values (?, ?, ?, ?, ?)", values)
+conn.commit()
+
+salary_sql = pd.read_sql_query("select * from salary;", conn)
+print(salary_sql.head())
+pd.read_sql_query("select * from salary;", conn).tail()
+pd.read_sql_query('select * from salary where salary>25000;', conn)
+pd.read_sql_query('select * from salary where experience=16;', conn)
+pd.read_sql_query('select * from salary where education="Master";', conn)
