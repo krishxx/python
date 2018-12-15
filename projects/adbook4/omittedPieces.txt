@@ -1,0 +1,10 @@
+Omitted parts:
+
+		else:
+			if(validators.url('mail.'+line)):
+				fout.write('mail.'+line)
+				#fout.write('https://mail.'+line)
+				#fout.write('http://www.mail.'+line)
+				#fout.write('https://www.mail.'+line)
+				
+1050

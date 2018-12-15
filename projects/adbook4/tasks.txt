@@ -1,0 +1,12 @@
+
+
+open a weburl
+check e-mail facility is there..mail.qq.com
+we will be abel to login or not
+try to create login credentials
+fill all these details dummy names and associations...
+e-mail service may be paid service
+location based mobile no.s 
+create mail Id
+create contact list
+and download all contacts n fields to csv type..
