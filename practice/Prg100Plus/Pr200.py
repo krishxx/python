@@ -7,3 +7,5 @@
 #third line adding post khdel
 
 #fourth line post crmdel
+
+#fifth line post khcrmdel.cmdcls
